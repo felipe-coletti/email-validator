@@ -59,12 +59,12 @@
 	outline-color: var(--color-accent);
 }
 
-#input .success {
+#input.success {
 	border: 1px solid green;
 	outline-color: green;
 }
 
-#input .error {
+#input.error {
 	border: 1px solid red;
 	outline-color: red;
 }
@@ -94,11 +94,11 @@
 	font-size: 0.875rem;
 }
 
-#result .success {
+#result.success {
 	color: green;
 }
 
-#result .error {
+#result.error {
 	color: red;
 }
 
