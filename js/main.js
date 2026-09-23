@@ -1,4 +1,4 @@
-import { isValid } from './validate.js'
+import { isValidEmail } from './email.js'
 
 const form = document.getElementById('form')
 const input = document.getElementById('input')
@@ -26,7 +26,7 @@ form.addEventListener('submit', event => {
 
     if (!email) {
         setValidationState('error', 'Digite um endereço de e-mail')
-    } else if (isValid(email)) {
+    } else if (isValidEmail(email)) {
         setValidationState('success', 'E-mail válido')
     } else {
         setValidationState('error', 'Digite um endereço de e-mail válido')
