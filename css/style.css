@@ -2,7 +2,9 @@
 	--color-accent: #0072e3;
 	--color-background: #f9f9f9;
 	--color-border: #ccc;
+	--color-error: #d32f2f;
 	--color-shadow: #d9d9d9;
+	--color-success: #188038;
 	--color-surface: #fff;
 	--color-text-primary: #000;
 }
@@ -61,13 +63,13 @@
 }
 
 #input.success {
-	border: 1px solid green;
-	outline-color: green;
+	border-color: var(--color-success);
+	outline-color: var(--color-success);
 }
 
 #input.error {
-	border: 1px solid red;
-	outline-color: red;
+	border-color: var(--color-error);
+	outline-color: var(--color-error);
 }
 
 #title,
@@ -96,11 +98,11 @@
 }
 
 #result.success {
-	color: green;
+	color: var(--color-success);
 }
 
 #result.error {
-	color: red;
+	color: var(--color-error);
 }
 
 @media screen and (max-width: 416px) {
